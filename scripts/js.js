@@ -12,3 +12,14 @@ function task2() {
     newYear = Math.round((newYear - d)/1000/60/60/24);
     alert (`До нового года осталось ${newYear} дней`);
 }
+function task3 () {
+    let data = new Date();
+    let den= ["вс","пн", "вт", "ср","чт", "пт", "сб"];
+    num=data.getDay();
+    let dataObj={
+        'curr':den[num],
+        'prev':den[num-1],
+        'next':den[num+1]
+    }
+    alert (`${dataObj.prev}\n${dataObj.curr}\n${dataObj.next}`)
+}

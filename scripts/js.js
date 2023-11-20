@@ -23,3 +23,13 @@ function task3 () {
     }
     alert (`${dataObj.prev}\n${dataObj.curr}\n${dataObj.next}`)
 }
+function task4 (data) {
+        let seconds = Math.floor(data / 1000);
+        let days = Math.floor(seconds / (24 * 3600));
+        seconds %=(24 * 3600);
+        let hours = Math.floor(seconds / 3600);
+        seconds %=3600;
+        let minutes = Math.floor(seconds / 60);
+        seconds %=60;
+        alert (`d:${days}\nh:${hours}\nm:${minutes}\ns:${seconds}`);
+    }

@@ -60,3 +60,13 @@ function task6() {
               fridays.push(date);
            } }
          console.log(fridays); }
+function task7() {
+        let data = new Date();
+        data = data.getHours();
+        if (data < 12 && data > 05)
+        alert ("Доброе утро!")
+        else if (data > 12 && data < 18)
+        alert ("Добрый день!")
+        else 
+        alert ("Добрый вечер!")
+    }

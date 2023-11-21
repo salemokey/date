@@ -33,3 +33,19 @@ function task4 (data) {
         seconds %=60;
         alert (`d:${days}\nh:${hours}\nm:${minutes}\ns:${seconds}`);
     }
+function task5(data) {
+    let curData = new Date().getTime();
+    console.log (curData);
+    let newData = data.replace(/^(.)(.).(.)(.)/,'$3$4.$1$2');
+    console.log (newData);
+    newData = new Date(newData);
+    console.log (newData);
+    let yearBirth = curData - newData.getTime()    
+    console.log (yearBirth);
+    let years = Math.floor(yearBirth / (1000*24*3600*365));
+    console.log(`Лет:${years}`);
+    let months = Math.floor(years * 12);
+    console.log(`Месяцев:${months}`);
+    let days = Math.floor(years * 365);
+    console.log(`Дней:${days}`);
+}

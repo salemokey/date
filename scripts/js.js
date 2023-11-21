@@ -49,3 +49,14 @@ function task5(data) {
     let days = Math.floor(years * 365);
     console.log(`Дней:${days}`);
 }
+function task6() {
+        let currentDate = new Date();
+        let year = currentDate.getFullYear();
+        let fridays = [];
+        for (let month = 0; month < 12; month++) {
+           let date = new Date(year, month, 13);
+           let dayOfWeek = date.getDay();
+           if (dayOfWeek == 5) { 
+              fridays.push(date);
+           } }
+         console.log(fridays); }

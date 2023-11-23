@@ -70,3 +70,20 @@ function task7() {
         else 
         alert ("Добрый вечер!")
     }
+function task8 () {
+    let year = new Date ().getFullYear();
+    let holidays = [
+        new Date(year, 0, 1), new Date(year, 2, 8), new Date(year, 4, 1), new Date(year, 4, 9), new Date(year, 5, 3), new Date(year, 10, 4), new Date(year, 0, 7), new Date(year, 2, 8), new Date(year, 4, 2), new Date(year, 4, 10), new Date(year, 5, 12), new Date(year, 10, 4) 
+      ];
+      
+      let daysOfWeek = ["вс","пн", "вт", "ср","чт", "пт", "сб"];
+      
+      let holidayDaysOfWeek = [];
+      
+      holidays.forEach(function(holiday) {
+        let dayOfWeek = holiday.getDay();
+        holidayDaysOfWeek.push(daysOfWeek[dayOfWeek]);
+      });
+
+      console.log (holidayDaysOfWeek);
+    }

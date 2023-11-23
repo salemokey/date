@@ -86,5 +86,4 @@ function task8 () {
       });
 
       console.log (holidayDaysOfWeek);
-      
     }

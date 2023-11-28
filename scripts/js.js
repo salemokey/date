@@ -21,7 +21,13 @@ function task3 () {
         'prev':den[num-1],
         'next':den[num+1]
     }
-    alert (`${dataObj.prev}\n${dataObj.curr}\n${dataObj.next}`)
+    if (dataObj.curr == 0) {
+        dataObj={'prev':den[6]}
+    }
+    else if (dataObj.curr == 6) {
+        dataObj={'next':den[0]}
+    }
+        alert (`${dataObj.prev}\n${dataObj.curr}\n${dataObj.next}`);
 }
 function task4 (data) {
         let seconds = Math.floor(data / 1000);
